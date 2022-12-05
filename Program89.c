@@ -1,0 +1,30 @@
+//Accept number from user and print * that number times
+//for accepting negative values also
+//-3
+//*  *  *
+//Time Complexity = N
+#include<stdio.h>
+
+void Display(int iNo)
+{
+    int iCnt = 0;
+    if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+   
+    for(iCnt = 1;iCnt <= iNo; iCnt++)
+    {
+        printf("*\t");
+    }
+    printf("\n");
+}
+int main()
+{
+    int iValue = 0;
+    printf("Enter the number\n");
+    scanf("%d",&iValue);
+
+    Display(iValue);
+    return 0;
+}
